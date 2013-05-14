@@ -25,12 +25,14 @@
 - (void)setCancelButtonWithTitle:(NSString *) title block:(void (^)()) block;
 - (void)setDestructiveButtonWithTitle:(NSString *) title block:(void (^)()) block;
 - (void)addButtonWithTitle:(NSString *) title block:(void (^)()) block;
+- (void)addButtonWithTitle:(NSString *)title andImageName:(NSString *)imageName andImageNameHighlighted:(NSString *)imageNameHighlighted block:(void (^)()) block;
 
 - (void)setCancelButtonWithTitle:(NSString *) title atIndex:(NSInteger)index block:(void (^)()) block;
 - (void)setDestructiveButtonWithTitle:(NSString *) title atIndex:(NSInteger)index block:(void (^)()) block;
 - (void)addButtonWithTitle:(NSString *) title atIndex:(NSInteger)index block:(void (^)()) block;
 
 - (void)showInView:(UIView *)view;
+- (void)showGridInView:(UIView *)view;
 
 - (NSUInteger)buttonCount;
 
